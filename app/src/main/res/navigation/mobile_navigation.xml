@@ -22,4 +22,9 @@
         android:name="br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_cad_carro"
+        android:name="br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.carros.CadCarroFragment"
+        android:label="@string/title_cad_carro"
+        tools:layout="@layout/fragment_cad_carro" />
 </navigation>

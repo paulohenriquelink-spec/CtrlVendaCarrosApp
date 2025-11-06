@@ -19,28 +19,28 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Data Venda" />
+                android:text="@string/data_venda" />
 
             <EditText
                 android:id="@+id/editTextDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="05/11/2025"
+                android:hint="@string/_05_11_2025"
                 android:inputType="date" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Produto Venda" />
+                android:text="@string/produto_venda" />
 
             <EditText
                 android:id="@+id/editTextText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="CHEVROLET CELTA 1.0  8V FLEX  MANUAL"
+                android:hint="@string/chevrolet_celta_1_0_8v_flex_manual"
                 android:inputType="text"
                 android:lines="2" />
 
@@ -48,35 +48,40 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Preço Venda" />
+                android:text="@string/preco_venda" />
 
             <EditText
                 android:id="@+id/editTextNumber2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="40.000"
+                android:hint="@string/_40_000"
                 android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nota Fiscal" />
+                android:text="@string/nota_fiscal" />
 
             <EditText
                 android:id="@+id/editTextNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="55.001.12345"
+                android:hint="@string/_55_001_12345"
                 android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/cliente" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/lista_cliente" />
 
         </LinearLayout>
     </ScrollView>
