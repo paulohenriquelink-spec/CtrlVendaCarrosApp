@@ -13,7 +13,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+
             android:orientation="vertical" >
+
 
             <TextView
                 android:id="@+id/textView7"
@@ -22,7 +28,7 @@
                 android:text="@string/data_venda" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/etData_Venda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -36,7 +42,7 @@
                 android:text="@string/produto_venda" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/etProduto_Venda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -51,7 +57,7 @@
                 android:text="@string/preco_venda" />
 
             <EditText
-                android:id="@+id/editTextNumber2"
+                android:id="@+id/etpreco_venda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -65,7 +71,7 @@
                 android:text="@string/nota_fiscal" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/etNotaFiscal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -79,9 +85,16 @@
                 android:text="@string/cliente" />
 
             <Spinner
+                android:id="@+id/splista_cliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/lista_cliente" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar" />
 
         </LinearLayout>
     </ScrollView>
