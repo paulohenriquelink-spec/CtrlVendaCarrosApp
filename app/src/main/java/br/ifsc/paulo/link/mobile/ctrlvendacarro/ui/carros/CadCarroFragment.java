@@ -249,6 +249,10 @@ public class CadCarroFragment extends Fragment implements View.OnClickListener {
                 carro.setPreco(this.etpreco_venda.getText().toString());
                 carro.setNotafiscal(this.etNotaFiscal.getText().toString());
 
+                int posCliente = splista_cliente.getSelectedItemPosition();
+                Cliente clienteSelecionado = (Cliente) splista_cliente.getItemAtPosition(posCliente);
+                carro.setIdCliente(clienteSelecionado.getIdcliente());
+
 
                 //chamada do web service de cadastro
                 try {
