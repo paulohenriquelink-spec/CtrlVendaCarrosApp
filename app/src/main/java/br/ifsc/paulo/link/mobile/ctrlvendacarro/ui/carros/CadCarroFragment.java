@@ -253,7 +253,7 @@ public class CadCarroFragment extends Fragment implements View.OnClickListener {
                 Cliente clienteSelecionado = (Cliente) splista_cliente.getItemAtPosition(posCliente);
                 carro.setIdCliente(clienteSelecionado.getIdcliente());
 
-
+//teste
                 //chamada do web service de cadastro
                 try {
                     cadastrarCarro(carro);
