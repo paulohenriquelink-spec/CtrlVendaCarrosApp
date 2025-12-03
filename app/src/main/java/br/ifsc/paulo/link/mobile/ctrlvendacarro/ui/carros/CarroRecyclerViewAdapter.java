@@ -3,24 +3,23 @@ package br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.carros;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.carros.placeholder.PlaceholderContent.PlaceholderItem;
 import br.ifsc.paulo.link.mobile.ctrlvendacarro.databinding.FragmentConCarroBinding;
+import br.ifsc.paulo.link.mobile.ctrlvendacarro.model.Carro;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
+ * {@link RecyclerView.Adapter} that can display a {@link Carro}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class CarroRecyclerViewAdapter extends RecyclerView.Adapter<CarroRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
+    private final List<Carro> mValues;
 
-    public CarroRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public CarroRecyclerViewAdapter(List<Carro> items) {
         mValues = items;
     }
 
@@ -34,8 +33,8 @@ public class CarroRecyclerViewAdapter extends RecyclerView.Adapter<CarroRecycler
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mIdView.setText(mValues.get(position).getProduto());
+        holder.mContentView.setText(String.valueOf(mValues.get(position).getPreco()));
     }
 
     @Override
@@ -46,7 +45,7 @@ public class CarroRecyclerViewAdapter extends RecyclerView.Adapter<CarroRecycler
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView mIdView;
         public final TextView mContentView;
-        public PlaceholderItem mItem;
+        public Carro mItem;
 
         public ViewHolder(FragmentConCarroBinding binding) {
             super(binding.getRoot());
