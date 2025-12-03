@@ -15,6 +15,7 @@
     <string name="nota_fiscal">Nota Fiscal</string>
     <string name="_55_001_12345">55.001.12345</string>
     <string name="cliente">Cliente</string>
+    <string name="title_con_carro">Con Carro</string>
 
     <string-array name="lista_cliente">
         <item>Paulo Henrique Roehe Link</item>

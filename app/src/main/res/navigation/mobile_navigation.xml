@@ -27,4 +27,9 @@
         android:name="br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.carros.CadCarroFragment"
         android:label="@string/title_cad_carro"
         tools:layout="@layout/fragment_cad_carro" />
+    <fragment
+        android:id="@+id/navigation_con_carro"
+        android:name="br.ifsc.paulo.link.mobile.ctrlvendacarro.ui.carros.ConCarroFragment"
+        android:label="@string/title_con_carro"
+        tools:layout="@layout/fragment_con_carro_list" />
 </navigation>

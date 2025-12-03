@@ -18,6 +18,11 @@
         android:title="@string/title_cad_carro" />
 
     <item
+        android:id="@+id/navigation_con_carro"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/title_con_carro" />
+
+    <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
